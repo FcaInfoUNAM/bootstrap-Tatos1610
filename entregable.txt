@@ -1,0 +1,46 @@
+La clase bg-dark en pone un color gris muy oscuro tirando a negro (#212529) a un elemento.
+Cambia el fondo del elemento al color oscuro predeterminado de Bootstrap.
+
+¿qué es lo que permite que en el formulario la contraseña esté oculta?
+<input type="password" class="form-control" id="password"> lo de form-control
+
+¿Dónde deberías agregar CSS en el documento si modificas el estilo de algúna clase?
+Justo antes de la etiqueta de <body> y dentro de <style>
+
+¿Bootstrap incorpora algún mecanismo para realizar los cambios del paso 4?
+Sí.
+Para el fondo está el siguiente CSS
+ .hero-section {
+  background-image: url('hero-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+Para la transparencia
+.card {
+  background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+}
+
+Para el boton
+button {
+    background-color: #212529; 
+    color: white;              
+    padding: 10px 20px;       
+    border: none;              
+    border-radius: 5px;       
+    cursor: pointer;          
+}
+
+¿Cómo cambiarias el fondo por un video?
+.back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100; 
+  object-fit: cover;
+}
